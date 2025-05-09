@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class HollowRhombustriangle {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("  Rhombus Hollow Pattern:");
+        System.out.println("Enter number of Rows:");
+        int n=s.nextInt();
+        int m=s.nextInt();;
+        System.out.println("enter colum");
+        int a=1;
+        for(int i=1; i<=n; i++){
+          for(int j=1; j<=m-i; j++){
+            System.out.print(" ");
+          }
+        
+          System.out.print("*");
+          if(i>1){
+            for(int k=1; k<=a; k++){
+              System.out.print(" ");
+            }
+            a=a+2;
+            System.out.print("*");
+          }
+          System.out.println("");
+        }
+      
+        // down figure
+      
+        m=5;
+        a=7;
+        for(int i=1; i<=m; i++){
+          for(int k=1; k<=i; k++){
+            System.out.print(" ");
+          }
+          System.out.print("*");
+          for(int j=1; j<=a; j++){
+            System.out.print(" ");
+          }
+          if(i!=5){
+            System.out.print("*");
+          }
+          
+          a=a-2;
+          
+          System.out.println("");
+        }
+         
+}
+}
+
+
